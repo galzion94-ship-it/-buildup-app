@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Build Up Remodeling Academy - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-background": "#191c1d",
+                "tertiary-container": "#1a1c1a",
+                "primary-fixed-dim": "#bac8dc",
+                "secondary-fixed": "#ffdea5",
+                "surface-container-highest": "#e1e3e4",
+                "secondary": "#775a19",
+                "on-secondary-fixed-variant": "#5d4201",
+                "surface-dim": "#d9dadb",
+                "tertiary-fixed": "#e2e3df",
+                "outline-variant": "#c4c6cc",
+                "inverse-primary": "#bac8dc",
+                "primary-container": "#0f1c2c",
+                "surface-container-low": "#f3f4f5",
+                "secondary-fixed-dim": "#e9c176",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-container": "#828481",
+                "surface-bright": "#f8f9fa",
+                "secondary-container": "#fed488",
+                "outline": "#74777d",
+                "on-surface-variant": "#44474c",
+                "on-primary": "#ffffff",
+                "background": "#f8f9fa",
+                "tertiary-fixed-dim": "#c6c7c3",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed-variant": "#454745",
+                "inverse-on-surface": "#f0f1f2",
+                "surface-variant": "#e1e3e4",
+                "primary": "#000000",
+                "primary-fixed": "#d6e4f9",
+                "on-error": "#ffffff",
+                "inverse-surface": "#2e3132",
+                "surface-tint": "#525f71",
+                "error": "#ba1a1a",
+                "on-primary-fixed-variant": "#3a4859",
+                "tertiary": "#000000",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#1a1c1a",
+                "error-container": "#ffdad6",
+                "on-primary-fixed": "#0f1c2c",
+                "on-secondary": "#ffffff",
+                "on-primary-container": "#778598",
+                "surface": "#f8f9fa",
+                "on-secondary-fixed": "#261900",
+                "on-secondary-container": "#785a1a",
+                "surface-container-high": "#e7e8e9",
+                "surface-container": "#edeeef",
+                "on-surface": "#191c1d"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blueprint-grid {
+            background-image: 
+                linear-gradient(to right, rgba(116, 119, 125, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(116, 119, 125, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0D1B2A] shadow-lg dark:shadow-none">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<!-- Left: Logo -->
+<div class="flex items-center gap-3">
+<img alt="Build Up Academy Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uguOntqQ73a5qpdFtE0JiIExA_Z17ldDBne3ZPTqfY-i9pWzwcvP7KS8GBV_RJRblIjWdiHSDhVFP4e4Q94Ks3-KbifVFu1MAeo60cLRi1D_oBrQ3Ue0B3lvNdHUiGnsfv3E0Mww9Xie-rSTRcgyf4dkE2_d3PSKltzNGoQ5CIl4V-5aA0ChBfCh2FIGokLAZXxERSdCBjDsRGG704bVA9O6uwGDkgpWb5dwDDbrsu3o1CpK0UVKoJ9WQJftVrN8dSP4MUraNjJtQ"/>
+</div>
+<!-- Right: Utilities and Menu -->
+<div class="flex items-center gap-1 md:gap-4">
+<button class="p-2 rounded-full transition-colors text-white hover:bg-white/10 active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+<button class="font-medium px-3 py-1.5 rounded text-sm transition-colors text-white hover:bg-white/10 active:scale-95 duration-150 font-label">
+        HE / EN
+      </button>
+<button class="p-2 rounded-full transition-colors text-white hover:bg-white/10 active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto blueprint-grid">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="max-w-3xl">
+<span class="text-secondary font-headline font-bold text-sm tracking-widest uppercase mb-4 block">Architectural Excellence</span>
+<h2 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-tight tracking-tight mb-6">
+                    Build Up Remodeling Academy
+                </h2>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed mb-10">
+                    Select a category to view technical specs, materials, and pricing.
+                </p>
+<!-- Search Bar -->
+<div class="relative group max-w-2xl">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline group-focus-within:text-secondary transition-colors" data-icon="search">search</span>
+</div>
+<input class="block w-full pl-12 pr-4 py-5 bg-surface-container-lowest border-none rounded-xl shadow-xl shadow-on-surface/5 focus:ring-2 focus:ring-secondary/20 placeholder-outline transition-all text-lg font-body" placeholder="Search materials, specs, or guides..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Category Grid -->
+<section>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- 1. Kitchens -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist modern high-end kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6eSibbEYnLBornwTywEVS4clu0ztYhPvhBU3WUAShpqyuuaRsJxWqo32lBpDHXEbWfpn5PYHTu_YKNc1TAEXs2H8v3SfNrOopBSe3NNzmbLLhJr8zl_xaqG-8DCkYwmhm1Hl40fltJHOggO7Jh1P611_EBlr83KUOEwEiIkEj8IfANAK598cpA7ND5Zes8JH8jWCUcuG4OOn8uAPKXsFhlTrRhdiR8RnGALqYRcih6WMB7A90SXbG94vCewqswZVAwn29FzFmiSI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="kitchen">kitchen</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Kitchens</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Cabinets, Countertops, Appliances &amp; Plumbing Layouts.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">12 Technical Guides</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 2. Bathrooms -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury bathroom details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU52U4ldJJL3ZbaEjRVBMZDZYhCv2eGjOmGN7TxDJls1H4dR7LFLpDrKftqvwO4km_0o7k1s-qi8o0XbZK9WrH23vk-WBoDvKtHnMEyqpwh8aAdSUNsnpcZ64lyf87dVq_uba4oH-oVygwP-sLEciZoE-HnhJv6-mWoyUzH_j26pMG4xS0ItzZx7jXQjaV2J4qDfB7EZGZOv6_wCe3q8e0KbygFxaUU2RRraMMhA1b8M6Ewt3CoagInv9NtIPRwgLiLYWFQsV04no"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="bathtub">bathtub</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Bathrooms</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Wet Area, Upgrades, Waterproofing &amp; Vanity Specs.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">8 Modules</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 3. Flooring -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Hardwood flooring samples" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBITZvAhfcxAVJ4zmbSjYazwKTq15FuMEo7nH42XFJqDgdu2Ufw8KEmKcR0Kbl8tZT_4zPMy_iMvGeaYvTEILpPGg6QEUcGGFEX4KelvTKAsi_E83e4AG19RqrcWtoyRNwg4cqDFArSxJhPX45p3899Q4Q95q4BsgCWr1SiXQqLg2UPcRmPCrqOx2Yee_CmcWL7IIK54D72WCupUgggrPZV016FGzW7uAka0-2Vfsq56JvW3sRvFsHCEguLcAtpFRF5hOskYtZiTzA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="layers">layers</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Flooring</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">LVP, Tile, Hardwood installation &amp; Underlayment.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">15 Specs</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 4. Roofing -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Shingle roofing installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG7JsMeD3SGPn0aemX5i6rmEUrTyNGluuK8RC-YYN7hsuj4OzxEDwCxNSia6K3fOQ3uI_sxP694Xd_7CJ1mgzHbzkng9xLXVry4cyrV5zJhEsNSXhZIq07ZVL9yUQNAnFztx7Q0tqIPsEspY9wque1u9WcoAQxvqjDnJlhPRmOEZNqWrlox12TyllFqOD3MWPeyl_BFHbyVoUMbXD1_ZGtBvXm1O0Xp3VuoX5YNx3SK9SV_e-CsQfUGPHMOjev5HhdGIK6ZHKRWK4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="roofing">roofing</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Roofing</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Shingles, Flashing, Venting &amp; Ice Dams.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">6 Manuals</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 5. Foundation -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Concrete foundation details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb0okHtLZmzros2Ud318dLXCiTcZZmAc1GtfFE7_vRfIeImnmcKPLAbt6uelcBgpXcfrNR8kgYtOZwJKYFO6NI0t3Vm2MamxiDxOf8vCwwlsrXiH0VEajYpT4QSb0sLyIKq4KO9hgZ0c_Oc9akchkviDARGCGquEaDcmVTHxHxzMnV9fwhb2csdagBDy59AvDeadLFspx96sIIAW6PSYFc7YCLetxXr6qor_mt2gbQe0WKAzindHmrQzwShGJnkrMMEcK5qS012Gw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="foundation">foundation</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Foundation</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Cracks, Repair, Structural Walls &amp; Grading.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">9 Repair Guides</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 6. Electrical & Lighting -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior lighting design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1LzC6nIuJQIDvLvc_xBWTPTy14w0V-njpeL6t0bj4nogOeWuX-OLeBjLiVMGqhlxJSF2nDoc7xTujpgqp051v_6QjkMmNiIWR5ClSo21jMvnB4rRf42BtvsrPrGaRm_ww8Pb4ZW0SyBFs3Kdr9bK8tzKT8KKbU2Rxd680M-sxWO374VGUx7EyLesqI1gT7ae1PDRhU0nZSf2SvNk9la3HL_SpVsaYR5q7IgO5hdssN118hevgjFu7En-JAhZ66CpnP7-ynpC9fQ8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="lightbulb">lightbulb</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Electrical &amp; Lighting</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Fixtures, Kelvin Temperatures, Circuits &amp; Panels.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">20 Schematics</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 7. Windows & Doors -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern window frames" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChPvSTetUMGZTOXov3x4jm3QD0NATJMiz3vrorKcx9Yc5u4z1G1pqhQw36SfXie5XY-CI-yhVCXYgPH7qGuw7nopMaqRd7lOe2ZhsHrj7XNsqOAHaXxOZ3hStqCUXI1rUQFgWwoniRC7NTCSkPWe9s0hNP6XLAnJHkRg-HTeUtknvaHgzVdA-Uqhd_i9v1D7eSAAf4e0pbrGzC5jbjhKSF6FmLbgCUz4u4AEVGxKscmmEQWv53Cd-G2cZPI5lrInOK__McWvPLJ5M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="window">window</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Windows &amp; Doors</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Vinyl, Low-E, Tempered &amp; Rough Openings.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">14 Specs</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 8. Outdoor Living -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Outdoor deck kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlWq2LKjqhtuknVQA_4JSMf5PtcR7PeLNB5JccGuLiMdh1JLm1cm0X0g7HGELkZKqGh0WzkOUocrCsta0tfDj4z-kQBfS6j9XjfrU741OZOCdw3w83gRGXY58QWrA6qLO1sKznNwkC6f-0rp-S1qz_3R6DkLqbz521EnEYUKyzgUJLol3SCbCwstdDTKrj1GIZU8WwzsVpJCLEoWeJpARru2NZpA3U4uBEvf9c5FLxunNaj8XeRLSK2lVii1bU-soynC_zNMIQ2p0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="deck">deck</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Outdoor Living</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Decks, Kitchens, Hardscaping &amp; Pergolas.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">11 Blueprints</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 9. Drywall & Painting -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional painting finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsVQPKv5JGNec5JypNGZ3O1TmLlS6fWCZJ0OvaJIJ5GhGQ-epjVp97zI0INqjrp7FT9rHiE2A00qshHZVpcG_bufw5X9u4hfNhFKpT0P3Cwe0fLGas_T3guBNwUAlNThxhrDFr56dWnX8togu59fL5GjXJdKQevJQ_QoznY_RH2jmxEfhRh-vgncsLlS4xh96fAt4rp_f9ZsoTdtUTw_jwox17FR-2h0oL0oZQji_wD6APuXr3VQP637MTmu6qWPicWE3F9j9zl7Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-secondary p-2 rounded-sm shadow-lg">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="format_paint">format_paint</span>
+</div>
+<h3 class="text-white font-headline font-bold text-xl">Drywall &amp; Painting</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-on-surface-variant text-sm mb-4">Levels, Sheen, Mudding &amp; Texture Match.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">7 Standards</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#0D1B2A]/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.3)] border-t border-white/5 z-50">
+<a class="flex flex-col items-center justify-center text-white bg-[#775a19] rounded-xl p-3 transition-all active:translate-y-[-2px] duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-3 hover:text-white transition-all active:translate-y-[-2px] duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-3 hover:text-white transition-all active:translate-y-[-2px] duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="rule">rule</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-3 hover:text-white transition-all active:translate-y-[-2px] duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="attach_money">attach_money</span>
+</a>
+</nav>
+</body></html>
