@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Build Up Academy - Foundation Guide</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#000000",
+              "secondary": "#775a19",
+              "surface": "#f8f9fa",
+              "on-surface": "#191c1d",
+              "outline-variant": "#c4c6cc",
+              "primary-container": "#0f1c2c",
+              "on-surface-variant": "#44474c",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid {
+            background-image: linear-gradient(rgba(116, 119, 125, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(116, 119, 125, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        body { min-height: max(884px, 100dvh); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-amber-100">
+    <header class="fixed top-0 w-full z-50 transition-colors duration-300" style="background-color: #0D1B2A;">
+        <div class="flex justify-between items-center px-4 md:px-6 h-16 w-full max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img alt="Build Up Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uguOntqQ73a5qpdFtE0JiIExA_Z17ldDBne3ZPTqfY-i9pWzwcvP7KS8GBV_RJRblIjWdiHSDhVFP4e4Q94Ks3-KbifVFu1MAeo60cLRi1D_oBrQ3Ue0B3lvNdHUiGnsfv3E0Mww9Xie-rSTRcgyf4dkE2_d3PSKltzNGoQ5CIl4V-5aA0ChBfCh2FIGokLAZXxERSdCBjDsRGG704bVA9O6uwGDkgpWb5dwDDbrsu3o1CpK0UVKoJ9WQJftVrN8dSP4MUraNjJtQ"/>
+                <h1 class="text-lg md:text-xl font-bold tracking-tight font-headline hidden sm:block text-white uppercase font-bold tracking-tighter">BUILD UP ACADEMY</h1>
+            </div>
+            <div class="flex items-center gap-2 md:gap-6">
+                <div class="flex items-center gap-1 md:gap-4">
+                    <a href="search.html" class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[24px]">search</span>
+                    </a>
+                    <button class="font-bold px-3 py-1.5 rounded text-sm transition-colors text-white hover:bg-white/10 uppercase">
+                        <span class="text-amber-400">HE</span> / EN
+                    </button>
+                    <button class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[24px]">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="min-h-screen blueprint-grid pb-24 pt-16">
+        <section class="max-w-7xl mx-auto px-6 pt-12 md:pt-20">
+            <div class="flex flex-col md:flex-row items-start justify-between gap-12">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-block bg-amber-100 px-3 py-1">
+                        <span class="text-secondary text-xs font-bold tracking-[0.2em] uppercase">Foundation Guide / מדריך יסודות</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-primary leading-none">
+                        סימנים לבעיות ביסודות
+                    </h1>
+                    <p class="text-on-surface-variant text-lg max-w-xl">
+                        זיהוי מוקדם של כשלים מבניים הוא קריטי לשמירה על ערך הנכס ובטיחותו. למד לזהות את הסימנים המעידים על תזוזת קרקע או שקיעת יסודות.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mt-12 md:mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="md:col-span-5 space-y-8">
+                    <div class="bg-white p-8 relative overflow-hidden shadow-sm border border-slate-100">
+                        <div class="absolute top-0 right-0 w-1 h-full bg-secondary"></div>
+                        <h3 class="text-2xl font-headline font-bold mb-8">סימנים נפוצים</h3>
+                        <div class="space-y-12">
+                            <div class="group flex items-start gap-4">
+                                <span class="text-4xl font-headline font-light text-slate-300 group-hover:text-secondary transition-colors">01</span>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">סדקים אלכסוניים מעל דלתות</h4>
+                                    <p class="text-on-surface-variant text-sm">סדקים ב-45 מעלות מעל משקופים מעידים לרוב על לחץ גזירה כתוצאה משקיעת יסוד צדדית.</p>
+                                </div>
+                            </div>
+                            <div class="group flex items-start gap-4">
+                                <span class="text-4xl font-headline font-light text-slate-300 group-hover:text-secondary transition-colors">02</span>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">דלתות שנתקעות</h4>
+                                    <p class="text-on-surface-variant text-sm">קושי בפתיחה או סגירה של דלתות וחלונות עקב שינוי בזוויות המבנה והמשקופים.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-primary-container p-8 text-white">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-secondary font-bold tracking-widest text-xs uppercase">Important / חובה</span>
+                        </div>
+                        <p class="text-2xl font-headline font-bold leading-tight">חובה דוח מהנדס ופרמיט לפני ביצוע כל עבודה</p>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <div class="relative h-full min-h-[400px] bg-slate-200 overflow-hidden shadow-sm">
+                        <img alt="Settling damage" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkjWifZSdw055Lg6iwjTlhwfmzWUoN91vdKivzEKKJ2N0EytmLBTXfHV50MSVI1qHdxyOoVQQp2CBa2pbPsY6iTubzXj3eKxSOSI0va71KeLGOUVhE5HoG25UjUR7ojooRkRjO9Lz79OQojMMtrB6rLNxKTFF7TOV2ISXVo9loIWc_eE8tJomvbvbxynokod5vOkN4hismnZ3H5UWE08ZU2-xDhh8v5SYbF4Dqt9uW-TTytxtY2QUUrSlrJLjRlBP3x_cc4eST648"/>
+                        <div class="absolute bottom-0 right-0 p-8 bg-white/90 backdrop-blur-md max-w-sm">
+                            <p class="text-sm font-medium italic text-on-surface">תיעוד של שקיעת יסוד אקטיבית בקיר גבס פנימי.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mt-16 md:mt-32">
+            <h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tighter mb-12">אפשרויות תיקון יסודות</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-12 border border-slate-100 hover:shadow-lg transition-all">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-6">foundation</span>
+                    <h3 class="text-2xl font-bold mb-4 font-headline">כלונסאות פלדה (Steel Piers)</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8">שיטה מתקדמת המשתמשת בצינורות פלדה המונעים הידראולית לעומק הסלע היציב. פתרון קבוע לבעיות שקיעה משמעותיות.</p>
+                    <div class="text-secondary font-bold font-headline text-2xl">$$$</div>
+                </div>
+                <div class="bg-white p-12 border border-slate-100 hover:shadow-lg transition-all">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-6">architecture</span>
+                    <h3 class="text-2xl font-bold mb-4 font-headline">כלונסאות בטון (Concrete Piers)</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8">יציקת כלונסאות בטון מזוין מתחת ליסודות הקיימים. פתרון חזק ועמיד במיוחד המתאים לסוגי קרקע מסוימים.</p>
+                    <div class="text-secondary font-bold font-headline text-2xl">$$$</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] border-t border-slate-100 z-50">
+        <a href="index.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">school</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">אקדמיה</span>
+        </a>
+        <a href="search.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">search</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">חיפוש</span>
+        </a>
+        <a href="checklist.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">fact_check</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">צ'ק-ליסט</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">person</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">פרופיל</span>
+        </a>
+    </nav>
+</body>
+</html>
