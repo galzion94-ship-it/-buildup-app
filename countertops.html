@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Up Academy - Countertops</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#d1e2ec",
+                        "tertiary-container": "#674600",
+                        "on-surface-variant": "#434652",
+                        "primary-container": "#254c80",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface": "#f8f9fa",
+                        "inverse-primary": "#a7c8ff",
+                        "primary-fixed": "#d5e3ff",
+                        "inverse-surface": "#2e3132",
+                        "surface-container-high": "#e7e8e9",
+                        "outline-variant": "#c3c6d4",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d4e5ef",
+                        "secondary-fixed-dim": "#b8c9d3",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#493100",
+                        "on-tertiary-container": "#f9af00",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#394951",
+                        "on-tertiary-fixed": "#281900",
+                        "on-secondary-fixed": "#0d1e25",
+                        "secondary": "#506169",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "on-primary-container": "#9abef9",
+                        "surface-tint": "#3a5f94",
+                        "outline": "#737783",
+                        "on-primary-fixed": "#001b3c",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface": "#191c1d",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "surface-dim": "#d9dadb",
+                        "on-secondary": "#ffffff",
+                        "background": "#f8f9fa",
+                        "surface-bright": "#f8f9fa",
+                        "primary": "#033568",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdeac",
+                        "on-secondary-container": "#55656d"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { font-family: 'Inter', sans-serif; min-height: max(884px, 100dvh); }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface mb-24">
+    <header class="fixed top-0 w-full z-50 transition-colors duration-300" style="background-color: #0D1B2A;">
+        <div class="flex justify-between items-center px-4 md:px-6 h-16 w-full max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img alt="Build Up Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uguOntqQ73a5qpdFtE0JiIExA_Z17ldDBne3ZPTqfY-i9pWzwcvP7KS8GBV_RJRblIjWdiHSDhVFP4e4Q94Ks3-KbifVFu1MAeo60cLRi1D_oBrQ3Ue0B3lvNdHUiGnsfv3E0Mww9Xie-rSTRcgyf4dkE2_d3PSKltzNGoQ5CIl4V-5aA0ChBfCh2FIGokLAZXxERSdCBjDsRGG704bVA9O6uwGDkgpWb5dwDDbrsu3o1CpK0UVKoJ9WQJftVrN8dSP4MUraNjJtQ"/>
+                <h1 class="text-lg md:text-xl font-bold tracking-tight font-headline hidden sm:block text-white">Build Up Academy</h1>
+            </div>
+            <div class="flex items-center gap-1 md:gap-4">
+                <a href="search.html" class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                    <span class="material-symbols-outlined text-[24px]">search</span>
+                </a>
+                <button class="font-bold px-3 py-1.5 rounded text-sm transition-colors text-white hover:bg-white/10">
+                    <span class="text-amber-400">HE</span> / EN
+                </button>
+                <button class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                    <span class="material-symbols-outlined text-[24px]">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24 px-6 max-w-7xl mx-auto">
+        <section class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+                <div class="md:col-span-8">
+                    <span class="text-tertiary font-bold tracking-widest uppercase text-xs mb-2 block">Professional Guide</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-primary leading-none mb-4">Core Countertops</h1>
+                    <p class="text-secondary text-lg max-w-xl">המדריך המלא לבחירת משטחי עבודה למטבח: חומרים, סיומות וחיפויים בסטנדרט אקדמאי.</p>
+                </div>
+                <div class="md:col-span-4 flex justify-end">
+                    <div class="bg-tertiary-container/10 p-4 rounded-xl backdrop-blur-sm border-r-4 border-tertiary">
+                        <p class="text-tertiary font-bold text-sm">PRO TIP</p>
+                        <p class="text-on-tertiary-fixed-variant text-sm">בחירת חומר עמיד לחום עשויה לחסוך נזקים בלתי הפיכים בעתיד.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex p-1 bg-surface-container-low rounded-xl mb-10 w-full max-w-2xl mx-auto overflow-hidden">
+            <button class="flex-1 py-3 text-sm font-bold tracking-wider uppercase rounded-lg bg-blue-100 text-blue-900">Materials</button>
+            <button class="flex-1 py-3 text-sm font-bold tracking-wider uppercase rounded-lg text-slate-500 hover:bg-slate-200/50 transition-all">Edges</button>
+            <button class="flex-1 py-3 text-sm font-bold tracking-wider uppercase rounded-lg text-slate-500 hover:bg-slate-200/50 transition-all">Backsplash</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:bg-surface-bright transition-colors">
+                <div class="h-48 overflow-hidden relative">
+                    <img alt="Laminate Countertop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5K-VWxWYrzuej-ACgz3N5g3wD6mdxjmHFoJLF23AMeXVyNkpp2d8bG5lqN3kXIMmjtQ2wJnjJ3ZhZWqcEIc7XS3vfaLYLgm_T7GLuf7KGSzpuD_KSBg04x4_uoZVBSQd35PpcLXtMEcTTRZujtyoSSXqxKog5ItEVijAHrr0ow5Syibf8-Yaa76ZCEGp2gFWR6R6Mea-SvA4ryEGIbaLd0TbX4jKFShjhqJfWl2XuyRGWllZjAQ_i9ZXoL51qtuRkJ6vXEUeICfU"/>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-bold text-lg">$</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">Laminate (פורמייקה)</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">הפתרון הכלכלי ביותר. פורמייקה עמידה בפני שחיקה יומיומית בסיסית אך רגישה מאוד לחום גבוה ולשריטות מסכינים.</p>
+                    <div class="flex items-center gap-2 text-xs font-bold text-error">
+                        <span class="material-symbols-outlined text-sm">warning</span> לא עמיד לחום ושריטות
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:bg-surface-bright transition-colors">
+                <div class="h-48 overflow-hidden relative">
+                    <img alt="Butcher Block Countertop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUFGKaRWP9O3vcHYNFsSdUlev8VwCZYyZLZ_Akla50U_lzkMP27hGcgMywT52Dr1asJX1v84rgDETVAlTiywWPgza5pg0DMEksWdmj9nD-DVLZBFODg7MQVGLUPDxh_3XdolzLLI6tr3J7pgXOfEuEigE0uPkCoQqEcHFjph_SrttRAEjtg91OIQxv9K54dNR6MS-7hoSQkMIucsaKZmJaLCzLKfprlM2AemjL0DabHFXbuocRFWFIpHAPK8wqK3tHttT_oeUYVVc"/>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-bold text-lg">$$</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">Butcher Block (עץ)</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">מראה חם וכפרי. דורש תחזוקה שוטפת הכוללת שימון תקופתי (Oil finish) ורגיש מאוד לנפיחות ממים בסביבת הכיור.</p>
+                    <div class="flex items-center gap-2 text-xs font-bold text-on-tertiary-fixed-variant">
+                        <span class="material-symbols-outlined text-sm">mop</span> דורש שימון תקופתי
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:bg-surface-bright transition-colors ring-2 ring-primary/10">
+                <div class="h-48 overflow-hidden relative">
+                    <img alt="Quartz Countertop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZXLNoRR7P-OTpp72ARz5R7l7L14SyeI4PuLObQ5SGRgx6cux2khpj8Zl869XhyPCcKXHQ01S9Y_pdeHXlh0iCnKL_MiLViHqhWVmqGcyFZ0V3PG2X_QSI8okszOyHm-r_OlVc_KZk0HrPWu5cqkSVJmTdmf6rZbQNcf1AWJabg1RYtwLFC-_JK1V19zGmoBnbD_UIVp2DUTPaUAw44g298pqKkCTGHkjkvK68ixItcyfRRaYg9PAw_gv2wVaSnsHCFpAlfNVG4l4"/>
+                    <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Most Popular</div>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-bold text-lg">$$$</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">Quartz (קוורץ)</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">הבחירה הפופולרית ביותר. חומר מהונדס, חזק במיוחד, אפס תחזוקה ועמיד לחלוטין לכתמים. חובה להשתמש בתחתיות לסירים חמים.</p>
+                    <div class="flex items-center gap-2 text-xs font-bold text-primary">
+                        <span class="material-symbols-outlined text-sm">task_alt</span> חזק ועמיד לכתמים
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:bg-surface-bright transition-colors">
+                <div class="h-48 overflow-hidden relative">
+                    <img alt="Granite Countertop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcm-yuw79sWYsDujrzJfcXIMTpNGLtmmeD--v_H9VoI4xFzdY4wvOEveMKuoKC_ijG4D2CM7bhDiHmPpxu7wSI9V9DMxpVYfucn-6RQBRjTZ3ckGCIIIvrpR4mOkSbNA5gbHxjTmo03IpKoQVjAkO-Dmf3EEYNoIxZ7sLzK4NfD8jfDildNWFJKErB1AqH2us6EkXZKd7rUI0-b8hbdZiDdffh2hv-4sxRoOvbyj6tbllke_W1gs6-3mzEZYDagf2WqLD_7N9pFU"/>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-bold text-lg">$$$</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">Granite (גרניט)</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">אבן טבעית ייחודית (אין שני לוחות זהים). עמידה מאוד לחום ישיר אך היותה נקבובית דורשת מריחת סילר פעם בשנה.</p>
+                    <div class="flex items-center gap-2 text-xs font-bold text-secondary">
+                        <span class="material-symbols-outlined text-sm">local_fire_department</span> עמיד לחום גבוה
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:bg-surface-bright transition-colors border-l-4 border-primary">
+                <div class="h-48 overflow-hidden relative">
+                    <img alt="Porcelain Countertop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEhf7zHS2zDl5nu8J9JpxxvMwXfBBiS7dpOOE6frGP480mU8axoRV8CTRRyng7Vr-f8cjxiZDT1jcEBAglddru0NAZjiJcQkmJ9xDIBAZbzsNcgJWQL-Yc6M9ARV-jjo1INL8I9OIDyGDNVWdJUZf7pWAVk0knnv3uzL8Fl6g5JNT0ecKO84GPG4QXhTFlYUzPxMyTftkS-dGBkCZmQbyruaeU-49WMi36J3sZB4l7J3sy5a3Mn9PCFf6TqjjIZ3RwnU5sh30FLdE"/>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-bold text-lg">$$$$</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">Porcelain (פורצלן)</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">הדור החדש של המשטחים. עמיד לחלוטין בפני שריטות, כתמים וחום. המחיר הגבוה נובע ממורכבות החיתוך וההתקנה.</p>
+                    <div class="flex items-center gap-2 text-xs font-bold text-primary">
+                        <span class="material-symbols-outlined text-sm">shield</span> עמיד להכל (Indestructible)
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:bg-surface-bright transition-colors">
+                <div class="h-48 overflow-hidden relative">
+                    <img alt="Marble Countertop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaq2oMva-NBM7cIXZ-NObLbei9VnRuKMY0Rr8Y3Cm7kW4SRgbIJYKffi1oJkWd3JHRXTZCmcNr4mxNiTRrGZ1v2808IL4Io2hUIncwSQGIWvP4f8GFVwT-sRQ1j-4X7JnUnDS8e6gsYUHIdbNL9FqUYEr1tOhuFZ2VOMf2JutAVOEDHJ8eFBZhkkhhGF3AwvEwQfEthhJZDw0m_zAfa4CILFhb2AYv5wZJ7yRX0N3gIAKdJwFO0S5DOGW_NaeFsExnEqIwaeQt9lI"/>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-bold text-lg">$$$$</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">Marble (שיש טבעי)</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">פסגת היוקרה. מראה קלאסי ואלגנטי, אך רגיש מאוד לחומציות (לימון/יין) ונשרט בקלות. דורש זהירות מקסימלית.</p>
+                    <div class="flex items-center gap-2 text-xs font-bold text-error">
+                        <span class="material-symbols-outlined text-sm">sentiment_very_dissatisfied</span> רגיש מאוד לספיגה ושריטות
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-20 mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4 sticky top-24 h-fit">
+                    <h2 class="text-3xl font-extrabold tracking-tighter text-primary mb-4">Edges & Finishes</h2>
+                    <p class="text-secondary leading-relaxed mb-6">סיומת הקאנט מגדירה את אופי המטבח - ממודרני נקי ועד למראה מאסיבי ויוקרתי.</p>
+                    <div class="bg-surface-container p-6 rounded-xl">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="material-symbols-outlined text-tertiary">info</span>
+                            <span class="font-bold text-primary">Technical Spec</span>
+                        </div>
+                        <p class="text-sm text-secondary">קאנט Mitered דורש הדבקה מקצועית בזווית 45 מעלות ליצירת מראה של גוש שיש אחד.</p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-8 space-y-6">
+                    <div class="flex flex-col md:flex-row items-center bg-surface-container-lowest rounded-xl overflow-hidden group">
+                        <div class="w-full md:w-1/3 h-48 md:h-auto overflow-hidden">
+                            <img alt="Eased Edge" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0P6BNJm2VqXjE757gAzDS8ksQxeumYjSRqGYVd_XOXgpHjgVBvUmll4ohfX_t6GC-21iLdWaDNz7sEW4rMZcS2uu8uPRZ5AU3YK6iYP7j2q9AbOX5Z3kTSnfo6gypVfWjWPzi_l_sIU41ejONZNlhHu3mxXmt0WUKiSYhdCg-NctZa2nPM0Uh30bmzrQijWdueucvH1aR3h0eeYbcj5wDm2GQkUhtOegq724VQmbwyN1sXDl0-oVhFwUkPBT67RvKQLEm6N7CJ-Q"/>
+                        </div>
+                        <div class="p-8 w-full md:w-2/3">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-xl font-bold text-primary">Eased Edge</h4>
+                                <span class="text-primary font-bold">$</span>
+                            </div>
+                            <p class="text-secondary text-sm">הקאנט הסטנדרטי והפופולרי ביותר. קו ישר עם עיגול קל מאוד בפינות למניעת פציעות ושבירות.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center bg-surface-container-lowest rounded-xl overflow-hidden group">
+                        <div class="w-full md:w-1/3 h-48 md:h-auto overflow-hidden">
+                            <img alt="Bullnose Edge" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFlzP6Wu61gJVbC6JWfWizNy4acf8KwN58CdbdZFdwxPwdC-UVhfJ0_2wm4P_MsLVzSUqlbvFlSOVNbTuL0V6tyLXKC003DxnzFlOuC8PwaAMC0iyxCk4tpMs9xlL9FkBy1G19T1o3VC5GVXAIiuOm98SXlLNEMftLDbbjT5sNnnd8-9NVO5iP5M65moivshDvsikXr7qVHKW_jEw5hb_byhrrtst3KtQI5D-2xcto5m6KqkjBTHbUAkjCMxxH35T9NuBpNYzfzCM"/>
+                        </div>
+                        <div class="p-8 w-full md:w-2/3">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-xl font-bold text-primary">Bullnose</h4>
+                                <span class="text-primary font-bold">$$</span>
+                            </div>
+                            <p class="text-secondary text-sm">קאנט חצי עגול המעניק מראה רך וזורם יותר. בטיחותי מאוד בבתים עם ילדים.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center bg-surface-container-lowest rounded-xl overflow-hidden group border-r-4 border-primary-container">
+                        <div class="w-full md:w-1/3 h-48 md:h-auto overflow-hidden">
+                            <img alt="Mitered Edge" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsIb2Rwl4zisZdNPh3iMLmbAkUFG3LGJ1C5haX1PjEHfJGxgAuqu2DPDhVIBu10eYWPOuYB8yhwI3dofAKRxDYtHBatpp0zmPY-BEO0sFaC0MCQxClNJ55ORuA4v_2JtKv0NGF98oeeMYt4Wr_G6aHgtIAsJWsT-mYtObcuTlu91rRDJTnu2ITLGUrU7WXCMMHbo_PXXdjA41FgzMbZzcaHQTtHFjMR2qg0LtyTCQNC8fErjTtepXE-Iqs83uxmjNnShd5MId8MRM"/>
+                        </div>
+                        <div class="p-8 w-full md:w-2/3">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-xl font-bold text-primary">Mitered Edge</h4>
+                                <span class="text-primary font-bold">$$$</span>
+                            </div>
+                            <p class="text-secondary text-sm">קאנט 45 מעלות היוצר אשליה של בלוק עבה ומסיבי (2-3 אינץ'). מראה מודרני, יוקרתי ומרשים.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-3xl font-extrabold tracking-tighter text-primary mb-8">Backsplash Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[500px]">
+                <div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-primary leading-tight">Tile<br/>(קרמיקה)</h3>
+                            <span class="text-primary font-bold text-xl">$$</span>
+                        </div>
+                        <p class="text-secondary text-sm leading-relaxed">קרמיקה, גרניט פורצלן או מוזאיקה. מגוון רחב של צורות וצבעים. דורש ניקוי רובה (Grout) לאורך זמן.</p>
+                    </div>
+                    <div class="mt-8 overflow-hidden rounded-lg h-40">
+                        <img alt="Tile Backsplash" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLuQKKdmMmND-jfbSCQl7GGgS9Ro1yQOgsztZjiKc9no9Z-Lnv6num9wxJTdoSfqbyKM7hg4cPN1EcR4LemtNGPd2hzKP7IoAFMIVgfMgPuTjlezMPESL0c-P_nSZ4-N15Qz_lt6ZDIZ1ZifYmcZrhBJelTjDZZsXCicI_Bal2wVHRzwwjRUmNgw63mfpGVWcd8iB0EB6Z6PAos7Xc7nke3pkJ5RQpYCLv80fOOw4sx8uh4uTWCHEdY-QPuRzmvESP-N9jVSSXibM"/>
+                    </div>
+                </div>
+                <div class="md:col-span-2 relative rounded-xl overflow-hidden group">
+                    <img alt="Full Slab Backsplash" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAyRYXQwmVh6dC6fWMNXxZFICyoe3XDGCHrh_yiIqk8P7tIoUSKPXxogVDbyC5-OSmgwqR2duAlzqt1Q6jm-3YAUFO9tMi_L0yvT3-seWazANgqyOhyLjGj3S2hLE-rR66pFR6UOx_3L1Au5LBdK-tbI6XxWlwlY8SW2pDctinAPyc-6Xts_Agk4Dg4k4WBkIskn0OW-ohBC9h8CTVWfyITC-y_54eEnf2zeCLUsgH6RBRjcqr_x7BhNMI-arBnhgWibTRIcnUg5g"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end">
+                        <div class="max-w-md">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-3xl font-bold text-white">Full Slab (לוח מלא)</h3>
+                                <span class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-lg font-bold">$$$$</span>
+                            </div>
+                            <p class="text-white/80 text-lg">המשך ישיר של המשטח על כל הקיר. יוקרה מקסימלית, מראה נקי ללא חיבורים וקלות ניקוי מושלמת.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] border-t border-slate-100 z-50">
+        <a href="index.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">school</span>
+            </div>
+            <span class="text-[10px] font-bold font-label text-[#775a19] tracking-tight">אקדמיה</span>
+        </a>
+        <a href="search.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">search</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">חיפוש</span>
+        </a>
+        <a href="checklist.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">fact_check</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">צ'ק-ליסט</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">person</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">פרופיל</span>
+        </a>
+    </nav>
+</body>
+</html>
