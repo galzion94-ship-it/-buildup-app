@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="he" dir="rtl">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -13,17 +13,17 @@
 </head>
 <body class="bg-[#f8f9fa] font-sans min-h-screen">
     <header class="fixed top-0 w-full z-50 bg-[#0D1B2A] h-16 flex items-center justify-between px-6 shadow-lg text-white">
-        <h1 class="font-bold tracking-tighter text-xl">BUILD UP ACADEMY</h1>
+        <h1 id="main-logo" class="font-bold tracking-tighter text-xl">BUILD UP ACADEMY</h1>
         <div class="flex items-center gap-4">
             <a href="search.html"><span class="material-symbols-outlined">search</span></a>
-            <button id="lang-toggle" class="text-sm font-bold border border-white/20 px-2 py-1 rounded">HE/EN</button>
+            <button onclick="toggleLang()" class="text-sm font-bold border border-white/20 px-2 py-1 rounded">HE/EN</button>
         </div>
     </header>
 
     <main class="pt-24 pb-32 px-6 max-w-7xl mx-auto blueprint-grid">
         <div class="mb-12">
-            <h2 class="text-5xl font-extrabold text-black mb-2 tracking-tighter">Sales Mastery</h2>
-            <p class="text-xl text-slate-500">Select a category to start training</p>
+            <h2 id="hero-title" class="text-5xl font-extrabold text-black mb-2 tracking-tighter">Sales Mastery</h2>
+            <p id="hero-sub" class="text-xl text-slate-500">Select a category to start training</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -89,6 +89,19 @@
         <a href="checklist.html" class="text-slate-400 flex flex-col items-center"><span class="material-symbols-outlined">fact_check</span><span class="text-[10px]">צ'ק-ליסט</span></a>
     </nav>
 
-    <script src="app.js"></script>
+    <script>
+        function toggleLang() {
+            const html = document.documentElement;
+            if (html.dir === "rtl") {
+                html.dir = "ltr";
+                document.getElementById('hero-title').innerText = "Sales Mastery";
+                document.getElementById('hero-sub').innerText = "Select a category to start training";
+            } else {
+                html.dir = "rtl";
+                document.getElementById('hero-title').innerText = "מומחיות במכירות";
+                document.getElementById('hero-sub').innerText = "בחר קטגוריה כדי להתחיל בהדרכה";
+            }
+        }
+    </script>
 </body>
 </html>
