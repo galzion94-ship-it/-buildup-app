@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html class="light" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Build Up Remodeling Academy - Dashboard</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
@@ -200,19 +200,27 @@
 
     <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] border-t border-slate-100 z-50">
         <a href="index.html" class="flex flex-col items-center justify-center gap-1 group">
-            <div class="p-1 text-[#775a19]"><span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">school</span></div>
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">school</span>
+            </div>
             <span class="text-[10px] font-bold font-label text-[#775a19] tracking-tight">אקדמיה</span>
         </a>
         <a href="search.html" class="flex flex-col items-center justify-center gap-1 group">
-            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">search</span></div>
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">search</span>
+            </div>
             <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">חיפוש</span>
         </a>
         <a href="checklist.html" class="flex flex-col items-center justify-center gap-1 group">
-            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">fact_check</span></div>
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">fact_check</span>
+            </div>
             <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">צ'ק-ליסט</span>
         </a>
         <a href="#" class="flex flex-col items-center justify-center gap-1 group">
-            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">person</span></div>
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">person</span>
+            </div>
             <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">פרופיל</span>
         </a>
     </nav>
