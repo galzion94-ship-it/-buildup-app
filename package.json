@@ -1,0 +1,6 @@
+{
+  "name": "buildup",
+  "scripts": {
+    "start": "npx serve -s ."
+  }
+}
