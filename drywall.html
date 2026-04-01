@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Build Up Academy - Drywall & Painting</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#000000",
+              "secondary": "#775a19",
+              "surface": "#f8f9fa",
+              "on-surface": "#191c1d",
+              "primary-container": "#0f1c2c",
+              "outline-variant": "#c4c6cc",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#44474c"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-pattern {
+            background-image: radial-gradient(rgba(196, 198, 204, 0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        body { min-height: max(884px, 100dvh); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+    <header class="fixed top-0 w-full z-50 transition-colors duration-300" style="background-color: #0D1B2A;">
+        <div class="flex justify-between items-center px-4 md:px-6 h-16 w-full max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img alt="Build Up Logo" class="h-8 md:h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uguOntqQ73a5qpdFtE0JiIExA_Z17ldDBne3ZPTqfY-i9pWzwcvP7KS8GBV_RJRblIjWdiHSDhVFP4e4Q94Ks3-KbifVFu1MAeo60cLRi1D_oBrQ3Ue0B3lvNdHUiGnsfv3E0Mww9Xie-rSTRcgyf4dkE2_d3PSKltzNGoQ5CIl4V-5aA0ChBfCh2FIGokLAZXxERSdCBjDsRGG704bVA9O6uwGDkgpWb5dwDDbrsu3o1CpK0UVKoJ9WQJftVrN8dSP4MUraNjJtQ"/>
+                <h1 class="text-lg md:text-xl font-bold tracking-tight font-headline hidden sm:block text-white uppercase">Build Up Academy</h1>
+            </div>
+            <div class="flex items-center gap-1 md:gap-4">
+                <a href="search.html" class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                    <span class="material-symbols-outlined text-[24px]">search</span>
+                </a>
+                <button class="font-bold px-3 py-1.5 rounded text-sm transition-colors text-white hover:bg-white/10">
+                    <span class="text-amber-400">HE</span> / EN
+                </button>
+                <button class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                    <span class="material-symbols-outlined text-[24px]">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24 px-6 md:px-12 max-w-7xl mx-auto pb-32">
+        <section class="mb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-7 space-y-4">
+                <div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-3 py-1 rounded-sm text-xs font-bold tracking-widest uppercase">
+                    <span class="material-symbols-outlined text-sm">format_paint</span> מדריך מקצועי
+                </div>
+                <h1 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tighter leading-[1.1]">
+                    מדריך קירות וצבע: <br/>
+                    <span class="text-secondary">רמות גימור וברק</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg max-w-xl">
+                    הבנת ההבדלים בין רמות הגימור ודרגות הברק היא קריטית לתקציב ולתוצאה הסופית של הפרויקט.
+                </p>
+            </div>
+            <div class="lg:col-span-5 h-48 lg:h-full bg-slate-100 relative overflow-hidden">
+                <div class="absolute inset-0 blueprint-pattern opacity-40"></div>
+                <div class="absolute bottom-6 right-6 text-slate-300 text-8xl font-black select-none uppercase">LEVELS</div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white overflow-hidden shadow-sm flex flex-col border border-slate-100">
+                <div class="p-8 space-y-6">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-2xl font-headline font-bold mb-1">רמה 4 (Level 4)</h2>
+                        <div class="bg-slate-100 px-4 py-2 text-sm font-bold tracking-tighter">גימור בטקסטורה</div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed text-sm">רמת גימור הכוללת טקסטורה המותזת על הקיר (Orange Peel או Knockdown) להסתרת פגמים קטנים.</p>
+                    <div class="text-secondary font-bold text-xl">$</div>
+                </div>
+                <div class="h-64 relative group overflow-hidden">
+                    <img class="w-full h-full object-cover transition-all group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArehVsgUoLWMh1NfuWiNcW9seLJU03gg5otNwvp2Q0EnaM0dl84o4E_d-n44xl6VJdHfc6eV_XQ8Egf_FhV_CtqVPeIxQt2kVg1jPRRICOURoRDxYTziaGVrRxD4YsjTOwzalTotFVpjU-brAAlmVCpMHol0jA5xIo2Lbj203ppd-KwPOu_6CkYf7xBTZ3SVlht6UxFbJ4kBwCaugE7OWybGMEsDJEN9FDbCg0BZt_VXOc30928HqAMqTGXLffNFe69vrr1dFWtNc"/>
+                    <div class="absolute bottom-4 right-4 text-white text-xs font-bold tracking-widest uppercase bg-black/50 px-2 py-1">Orange Peel</div>
+                </div>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow-sm flex flex-col border border-slate-100">
+                <div class="p-8 space-y-6">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-2xl font-headline font-bold mb-1">רמה 5 (Level 5)</h2>
+                        <div class="bg-primary-container text-white px-4 py-2 text-sm font-bold tracking-tighter">גימור חלק (Museum Grade)</div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed text-sm">רמת הגימור הגבוהה ביותר. דורשת יישום של שכבת שפכטל מלאה על כל שטח הפנים של הקיר.</p>
+                    <div class="text-secondary font-bold text-xl">$$$$</div>
+                </div>
+                <div class="h-64 relative group overflow-hidden">
+                    <img class="w-full h-full object-cover transition-all group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ7ruQUURRTyi1EDlTMWUHpfXUSodgfu_WSaxz2Hjgrl0Hk9USy57Binn2-eG3h5wBuQNENcBsYqBrDlhPCQSGQbW9BAluzxb2QA_pK9hV0y74nXLTOU3ZsdoYqVorr_7_pgCeGU9kEj1prgQ66HtMPxaPASMP_DrqHRJ5CsB48i0r-Ld0DF4fYZQNeCqCj09d7D9Cal8Qpnu_Naf_7LwHzSuWrLTVfIxXKvkiYxO4ZJRUpleCsRw1tBnp8n4R4nDjre6riLOUxmY"/>
+                    <div class="absolute bottom-4 right-4 text-white text-xs font-bold tracking-widest uppercase bg-black/50 px-2 py-1">Perfectly Smooth</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-16">
+            <h3 class="text-2xl font-headline font-bold mb-8 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary">palette</span> דרגות ברק (Sheen Levels)
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-50 p-6 rounded-lg text-center border border-slate-200">
+                    <div class="font-bold text-sm">Flat / Matte</div>
+                    <div class="text-[10px] text-slate-500 uppercase mt-1">Non-Reflective</div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg text-center border border-slate-200">
+                    <div class="font-bold text-sm">Eggshell</div>
+                    <div class="text-[10px] text-slate-500 uppercase mt-1">Soft Glow</div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg text-center border border-slate-200">
+                    <div class="font-bold text-sm">Satin</div>
+                    <div class="text-[10px] text-slate-500 uppercase mt-1">Subtle Shine</div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg text-center border border-slate-200">
+                    <div class="font-bold text-sm">Semi-Gloss</div>
+                    <div class="text-[10px] text-slate-500 uppercase mt-1">High Reflective</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] border-t border-slate-100 z-50">
+        <a href="index.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">school</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">אקדמיה</span>
+        </a>
+        <a href="search.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">search</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">חיפוש</span>
+        </a>
+        <a href="checklist.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">fact_check</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">צ'ק-ליסט</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 text-slate-400 hover:text-[#775a19]"><span class="material-symbols-outlined text-[28px]">person</span></div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">פרופיל</span>
+        </a>
+    </nav>
+</body>
+</html>
