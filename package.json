@@ -1,6 +1,6 @@
 {
-  "name": "buildup",
+  "name": "buildup-app",
   "scripts": {
-    "start": "npx serve -s ."
+    "start": "npx serve ."
   }
 }
