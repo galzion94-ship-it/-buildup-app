@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Up Academy - Bathrooms</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0D1B2A",
+                        "secondary": "#775a19",
+                        "surface": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "outline-variant": "#c4c6cc",
+                        "background": "#f8f9fa",
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .blueprint-grid {
+            background-image: linear-gradient(to right, rgba(116, 119, 125, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(116, 119, 125, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        body { min-height: max(884px, 100dvh); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+    <header class="fixed top-0 w-full z-50 transition-colors duration-300" style="background-color: #0D1B2A;">
+        <div class="flex justify-between items-center px-4 md:px-6 h-16 w-full max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img alt="Build Up Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uguOntqQ73a5qpdFtE0JiIExA_Z17ldDBne3ZPTqfY-i9pWzwcvP7KS8GBV_RJRblIjWdiHSDhVFP4e4Q94Ks3-KbifVFu1MAeo60cLRi1D_oBrQ3Ue0B3lvNdHUiGnsfv3E0Mww9Xie-rSTRcgyf4dkE2_d3PSKltzNGoQ5CIl4V-5aA0ChBfCh2FIGokLAZXxERSdCBjDsRGG704bVA9O6uwGDkgpWb5dwDDbrsu3o1CpK0UVKoJ9WQJftVrN8dSP4MUraNjJtQ"/>
+                <h1 class="text-lg md:text-xl font-bold tracking-tight font-headline hidden sm:block text-white">Build Up Academy</h1>
+            </div>
+            <div class="flex items-center gap-2 md:gap-6">
+                <div class="flex items-center gap-1 md:gap-4">
+                    <a href="search.html" class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[24px]">search</span>
+                    </a>
+                    <button class="font-bold px-3 py-1.5 rounded text-sm transition-colors text-white hover:bg-white/10">
+                        <span class="text-amber-400">HE</span> / EN
+                    </button>
+                    <button class="p-2 rounded-full transition-colors text-white hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[24px]">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16 pb-24 blueprint-grid min-h-screen">
+        <section class="relative h-48 flex items-end p-6 bg-[#0D1B2A] overflow-hidden">
+            <div class="absolute inset-0 opacity-40">
+                <img alt="Modern Bathroom Tiles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBqM7TjjGrZeVEqNAC3iC1XAw7iP9BHZfbumvu4uCRoGQAJYM5vuE-WUkiclOukakIyE99Y5robibuqo_a3WVyQUtE71C5qJEbyZOMsQvxwNBgMzvJ9GbpsgefnkFQwatuY-XZOkCzOkJWxD-RAesVmlLLkxrHM880yn0oVE8S9FkvZk7AJsJ12Z_LvgZP1Ve-EKdXw95RCryoiO7feTYQ1eCkoMHUAaMH5lQ0Ym0qJBLtDRxIgpvta8ICgTmLZsCfoV19kpBLjFE"/>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0D1B2A] to-transparent"></div>
+            <div class="relative z-10">
+                <div class="inline-block bg-secondary text-white px-2 py-1 text-[10px] font-bold uppercase tracking-wider mb-2">Architectural Guide</div>
+                <h1 class="font-headline text-3xl font-extrabold text-white">מדריך חדרי רחצה</h1>
+            </div>
+        </section>
+
+        <nav class="sticky top-16 z-40 bg-white border-b border-outline-variant/20 shadow-sm overflow-x-auto hide-scrollbar flex whitespace-nowrap px-4" id="tab-nav">
+            <button class="tab-btn px-5 py-4 text-sm font-medium text-slate-500 hover:text-primary transition-colors" data-tab="1" onclick="showTab(1)">סוגי אזורי רחצה</button>
+            <button class="tab-btn px-5 py-4 text-sm font-medium text-slate-500 hover:text-primary transition-colors" data-tab="2" onclick="showTab(2)">סוגי כיורים</button>
+            <button class="tab-btn px-5 py-4 text-sm font-bold border-b-2 border-secondary text-primary" data-tab="3" onclick="showTab(3)">סוגי טייל וחיפוי</button>
+            <button class="tab-btn px-5 py-4 text-sm font-medium text-slate-500 hover:text-primary transition-colors" data-tab="4" onclick="showTab(4)">שידרוגי יוקרה וספא</button>
+            <button class="tab-btn px-5 py-4 text-sm font-medium text-slate-500 hover:text-primary transition-colors" data-tab="5" onclick="showTab(5)">צ'ק-ליסט טכני</button>
+        </nav>
+
+        <div class="px-4 py-8 space-y-10 max-w-7xl mx-auto" id="content-area">
+            
+            <section class="space-y-6 tab-content hidden" id="tab-1">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-headline text-xl font-bold border-r-4 border-secondary pr-3">סוגי אזורי רחצה</h2>
+                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">TAB 01</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Alcove Shower" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-Qv-u997yT69l7_w5Gk78Wv59kS58_V7M5g3Lp2P_97g7M5g3Lp2P_97g7M5g3Lp2P_97g"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">מקלחון פינתי (Alcove)</h3>
+                            <p class="text-xs text-slate-500">הפתרון הנפוץ ביותר, חוסך מקום ויעיל.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Walk-in Shower" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-Qv-u997yT69l7_w5Gk78Wv59kS58_V7M5g3Lp2P_97g7M5g3Lp2P_97g7M5g3Lp2P_97g"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">מקלחון Walk-in</h3>
+                            <p class="text-xs text-slate-500">מראה מודרני, ללא סף, גישה נוחה מאוד.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$$</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6 tab-content hidden" id="tab-2">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-headline text-xl font-bold border-r-4 border-secondary pr-3">סוגי כיורים</h2>
+                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">TAB 02</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Undermount Sink" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-Qv-u997yT69l7_w5Gk78Wv59kS58_V7M5g3Lp2P_97g7M5g3Lp2P_97g7M5g3Lp2P_97g"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">כיור תחתון (Undermount)</h3>
+                            <p class="text-xs text-slate-500">מראה נקי, קל לניקוי המשטח.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Vessel Sink" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-Qv-u997yT69l7_w5Gk78Wv59kS58_V7M5g3Lp2P_97g7M5g3Lp2P_97g7M5g3Lp2P_97g"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">כיור מונח (Vessel)</h3>
+                            <p class="text-xs text-slate-500">אלמנט עיצובי בולט, מגוון חומרים.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$$</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6 tab-content" id="tab-3">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-headline text-xl font-bold border-r-4 border-secondary pr-3">סוגי טייל וחיפוי</h2>
+                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">TAB 03</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Ceramic Tiles" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWVH9zAU5_6bvBfhLhQvvlrp2TCMJc3Tbz66aoaJerEVFdYOeF59OWWOz1VVIOtzo6M9xnY1FE2Ds1mFwX12e0fTHCuglAysjyewlxu_5LTWtMAE3hca6AEZq1kT76b_8Z-nK8EUlICudvCnZrzPp5rU7vHky0R_KcSeFwuR_MRwofgQgie7YicRKgQlvJ94lozteKD6BKtxl69Enfz85DqX0nP9vFaW23qKzCx56kQXMnS9wuyB9H34xX2DLAZh_eM-NV5FnItQY"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">קרמיקה (Ceramic)</h3>
+                            <p class="text-xs text-slate-500">פתרון ורסטילי וכלכלי, מומלץ מאוד לחיפוי קירות.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Porcelain Tiles" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Xr0kzej6665F7vFdbpFSvjxctlSk_BtXzIxosMxBmphF-lssc4BDkzBmSUGvomYRUfeOQgQORDtCmsAHDSZyHwTmF5TZBKrN-VFrPdpOkxzstvTxuObmN-jk1fYkef-eQXCG6mi8nkqBreTF3iZ8ZDG7lrcKiz-caAlP6YFqNBZa-5N7lObrXGBsRanP613fmJ74gs_x8X2-THsl4u6xqMT4JkB8J1wXwgsVXjXJ_bZV6ZK37OWCrwiB61m-byExtBFKPfibHZc"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">גרניט פורצלן (Porcelain)</h3>
+                            <p class="text-xs text-slate-500">הנמכר ביותר. חזק מאוד, אינו סופג ועמיד לשחיקה.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$</span>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 border-secondary/20 rounded-xl p-4 shadow-sm flex gap-4 items-center">
+                        <img alt="Natural Stone" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzCYTdWaNE8eY_NJYbfPHbBY-ml77Ns_RmnSdow1XUcx7J-Ri0J7pcmU47fVCDegt-Vg__In7EDf8Dal-PwHiu5dGD3ye4rHIb4A36Mu6b-nsWI3NDxuFZd_NBtflyqL3SkeJHUGbUNFpDGYdovd3yPvrNvTkPexO5fJgr6OXSsigymje8dnmVVJ_0H1D2H8gQLFNVEpUttRnzsC1X2Cy6zBPyQhvxZ16GAGRmTKv1FDG9GX0s8AkEWkCRX2qW7XaO7PtpE4hAPx0"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">אבן טבעית (שיש/גרניט)</h3>
+                            <div class="bg-amber-50 text-amber-800 text-[10px] font-bold px-2 py-1 rounded w-fit mb-1 border border-amber-200">
+                                חובה: מריחת סילר (Sealer) תקופתית
+                            </div>
+                            <p class="text-xs text-slate-500">יופי ייחודי וטבעי שאין שני לו.</p>
+                            <span class="text-secondary font-bold text-sm block">$$$$</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Large Format Tile" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKEhCCK3UQbEE1lKJv9uNIuYJu9ufVsuxem0IyqNQ-1cGWafregD7qdrfL4c_fDEU6m9d3wcBbgRcOD_i5KoFTZ_IyilHY52aq1-imPdro-G8kH-oGr8ePqrdQe5WYASawuQp2SA9kHRS2Mj3-21HgdFx8nc5uXFF78eGtcNOJv-nMjhTPTK9TdU5gkWgcWO_K8VziI219WC43x21RhBfM2MWP-aEZ_Lrgt51bH2LFUgfVKKqzy8qWYowF8EPf_ejXwLILN-43cM"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">Large Format Tile</h3>
+                            <p class="text-xs text-slate-500">אריחי ענק (24x48 ומעלה), מראה יוקרתי עם מעט קווי רובה.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$$</span>
+                        </div>
+                    </div>
+                    <div class="bg-primary text-white rounded-xl p-4 shadow-lg flex gap-4 items-center md:col-span-2">
+                        <img alt="Glass Tile" class="w-24 h-24 object-cover rounded-lg opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ahOXqt5Rd-n85QoaBPW6I6j5wbdpIzgqqqrMzYvm_TNQRzx83AJ3y4tY8hbOZTKk2VcXcPf00kk5iIzvy4Fvq2BMdgUewGteyQWcI69uT107Usl8HJxNJa7Vfg_wbTJGXa2h2BZKaU6ugM8C-AqkFrSABB4y5ru84vJwh8VJUVRwLlQzC55ecfmVqtoaUc2ovpE2J773XHiP2TR6kROAFLTuaj0qbF6nzeCW4-0FhoAz9YSYsOWmPKxb2MfihfP31b_5mm6xzIc"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1 text-white">אריחי זכוכית (Glass Tile)</h3>
+                            <p class="text-xs text-slate-300">מושלם כ-backsplash או דגשים דקורטיביים מבריקים.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$$</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6 tab-content hidden" id="tab-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-headline text-xl font-bold border-r-4 border-secondary pr-3">שידרוגי יוקרה וספא</h2>
+                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">TAB 04</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Heated Floors" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-Qv-u997yT69l7_w5Gk78Wv59kS58_V7M5g3Lp2P_97g7M5g3Lp2P_97g7M5g3Lp2P_97g"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">חימום תת-רצפתי</h3>
+                            <p class="text-xs text-slate-500">נוחות מקסימלית בחורף, ייבוש מהיר של הרצפה.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$$</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-sm flex gap-4 items-center border border-slate-100">
+                        <img alt="Steam Shower" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-Qv-u997yT69l7_w5Gk78Wv59kS58_V7M5g3Lp2P_97g7M5g3Lp2P_97g7M5g3Lp2P_97g"/>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-base mb-1">מקלחת אדים (Steam)</h3>
+                            <p class="text-xs text-slate-500">חווית ספא ביתית, דורש איטום מיוחד.</p>
+                            <span class="text-secondary font-bold text-sm mt-2 block">$$$$</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6 tab-content hidden" id="tab-5">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-headline text-xl font-bold border-r-4 border-secondary pr-3">צ'ק-ליסט טכני</h2>
+                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">TAB 05</span>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-500">check_circle</span>
+                            <span class="text-sm">איטום (Waterproofing) - חובה בכל האזורים הרטובים.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-500">check_circle</span>
+                            <span class="text-sm">אוורור (Ventilation) - וונטה או חלון תקני למניעת עובש.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-500">check_circle</span>
+                            <span class="text-sm">שיפועים (Slopes) - ניקוז תקין לכיוון ה-drain.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] border-t border-slate-100 z-50">
+        <a href="index.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">school</span>
+            </div>
+            <span class="text-[10px] font-bold font-label text-[#775a19] tracking-tight">אקדמיה</span>
+        </a>
+        <a href="search.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">search</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">חיפוש</span>
+        </a>
+        <a href="checklist.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">fact_check</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">צ'ק-ליסט</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">person</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">פרופיל</span>
+        </a>
+    </nav>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('border-b-2', 'border-secondary', 'text-primary', 'font-bold');
+                btn.classList.add('text-slate-500', 'font-medium');
+            });
+            const targetContent = document.getElementById(`tab-${tabId}`);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+            }
+            const activeBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('border-b-2', 'border-secondary', 'text-primary', 'font-bold');
+                activeBtn.classList.remove('text-slate-500', 'font-medium');
+                activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        }
+    </script>
+</body>
+</html>
