@@ -3,86 +3,60 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Build Up Academy - Smart Search</title>
+    <title>Smart Search</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <style>
       .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-      body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
-      .font-manrope { font-family: 'Manrope', sans-serif; }
     </style>
 </head>
 <body class="bg-[#f8f9fa] text-[#191c1d] min-h-screen pb-24">
     <header class="fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16 bg-[#033568] text-white shadow-lg">
-        <div class="flex items-center gap-4">
-            <a href="index.html" class="text-white"><span class="material-symbols-outlined">arrow_forward</span></a>
-            <span class="text-lg font-black tracking-widest font-manrope uppercase">BUILD UP ACADEMY</span>
-        </div>
-        <div class="flex items-center gap-2">
-            <button id="lang-toggle" class="text-white font-bold border border-white/20 px-2 py-1 rounded text-sm">HE/EN</button>
-        </div>
+        <a href="index.html" class="text-white"><span class="material-symbols-outlined">arrow_forward</span></a>
+        <span class="text-lg font-bold">BUILD UP ACADEMY</span>
+        <button onclick="toggleLangSearch()" class="border border-white/20 px-2 py-1 rounded text-sm">HE/EN</button>
     </header>
 
     <main class="pt-24 px-6 max-w-4xl mx-auto">
         <header class="mb-10 text-right">
-            <h1 class="text-4xl font-extrabold font-manrope tracking-tighter text-[#033568] mb-2">חיפוש חכם</h1>
-            <p class="text-slate-500 font-body max-w-md ml-auto">מצא תשובות טכניות מהירות למונחי בנייה ומפרטים מקצועיים.</p>
+            <h1 class="text-4xl font-extrabold text-[#033568] mb-2">חיפוש חכם</h1>
+            <p class="text-slate-500">הקלד מונח ולחץ Enter (למשל: מטבח, חלונות, ריצוף)</p>
         </header>
 
         <section class="mb-12">
-            <div class="relative group">
-                <div class="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
-                    <span class="material-symbols-outlined text-[#033568] text-3xl">search</span>
-                </div>
-                <input class="w-full bg-white h-20 pr-16 pl-6 text-xl font-body border-none rounded-xl shadow-md focus:ring-2 focus:ring-[#033568]/20 transition-all placeholder:text-slate-300" placeholder="הקלד מונח (למשל: מטבח, חלונות, Low-E)..." type="text">
-                <div class="absolute inset-y-0 left-4 flex items-center">
-                    <kbd class="hidden md:inline-flex items-center px-3 py-1 text-xs font-semibold text-slate-400 bg-slate-100 rounded-lg">Enter ↵</kbd>
-                </div>
-            </div>
+            <input id="search-input" class="w-full bg-white h-20 pr-6 pl-6 text-xl border-none rounded-xl shadow-md focus:ring-2 focus:ring-[#033568]/20 transition-all" placeholder="חיפוש..." type="text">
         </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-            <div class="md:col-span-8 space-y-6">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 relative overflow-hidden">
-                    <h2 class="text-lg font-bold font-manrope text-[#033568] mb-6">מונחים פופולריים</h2>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="cabinets.html" class="px-5 py-2.5 bg-slate-50 hover:bg-[#033568] hover:text-white transition-all rounded-full text-sm font-semibold">Kitchens / מטבחים</a>
-                        <a href="windows.html" class="px-5 py-2.5 bg-slate-50 hover:bg-[#033568] hover:text-white transition-all rounded-full text-sm font-semibold">Windows / חלונות</a>
-                        <a href="flooring.html" class="px-5 py-2.5 bg-slate-50 hover:bg-[#033568] hover:text-white transition-all rounded-full text-sm font-semibold">Flooring / ריצוף</a>
-                        <a href="foundation.html" class="px-5 py-2.5 bg-slate-50 hover:bg-[#033568] hover:text-white transition-all rounded-full text-sm font-semibold">Foundation / יסודות</a>
-                        <a href="drywall.html" class="px-5 py-2.5 bg-slate-50 hover:bg-[#033568] hover:text-white transition-all rounded-full text-sm font-semibold">Drywall / קירות</a>
-                    </div>
-                </div>
-
-                <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
-                    <h2 class="text-lg font-bold font-manrope text-[#033568] mb-6">חיפושים אחרונים</h2>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-                            <span class="material-symbols-outlined text-slate-400">history</span>
-                            <span class="font-medium">בידוד תרמי תקרות</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:col-span-4">
-                <div class="relative h-full min-h-[250px] rounded-xl overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#033568] to-transparent flex flex-col justify-end p-6">
-                        <span class="text-white/60 text-[10px] font-bold uppercase tracking-widest mb-1">Featured Guide</span>
-                        <h3 class="text-white font-bold text-lg leading-tight">חידושים בזכוכית חכמה 2026</h3>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                <h2 class="text-lg font-bold text-[#033568] mb-6">מונחים פופולריים</h2>
+                <div class="flex flex-wrap gap-3">
+                    <a href="cabinets.html" class="px-4 py-2 bg-slate-100 rounded-full text-sm font-semibold">Kitchens / מטבחים</a>
+                    <a href="windows.html" class="px-4 py-2 bg-slate-100 rounded-full text-sm font-semibold">Windows / חלונות</a>
+                    <a href="flooring.html" class="px-4 py-2 bg-slate-100 rounded-full text-sm font-semibold">Flooring / ריצוף</a>
                 </div>
             </div>
         </div>
     </main>
 
-    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 bg-white/80 backdrop-blur-xl shadow-lg border-t z-50">
-        <a href="index.html" class="text-slate-400 flex flex-col items-center"><span class="material-symbols-outlined">school</span><span class="text-[10px] font-medium uppercase">Academy</span></a>
-        <a href="search.html" class="text-[#033568] flex flex-col items-center"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span><span class="text-[10px] font-bold uppercase">Search</span></a>
-        <a href="checklist.html" class="text-slate-400 flex flex-col items-center"><span class="material-symbols-outlined">fact_check</span><span class="text-[10px] font-medium uppercase">Checklist</span></a>
-    </nav>
+    <script>
+        const input = document.getElementById('search-input');
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const val = input.value.toLowerCase();
+                if (val.includes('מטבח') || val.includes('kitchen')) window.location.href = 'cabinets.html';
+                else if (val.includes('חלון') || val.includes('window')) window.location.href = 'windows.html';
+                else if (val.includes('ריצוף') || val.includes('floor')) window.location.href = 'flooring.html';
+                else if (val.includes('יסוד') || val.includes('found')) window.location.href = 'foundation.html';
+                else if (val.includes('רחצה') || val.includes('bath')) window.location.href = 'bathrooms.html';
+                else alert('לא נמצאו תוצאות / No results found');
+            }
+        });
 
-    <script src="app.js"></script>
+        function toggleLangSearch() {
+            const html = document.documentElement;
+            html.dir = (html.dir === "rtl") ? "ltr" : "rtl";
+        }
+    </script>
 </body>
 </html>
