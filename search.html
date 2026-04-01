@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Build Up Academy - Smart Search</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#033568",
+              "secondary": "#506169",
+              "surface": "#f8f9fa",
+              "on-surface": "#191c1d",
+              "primary-container": "#254c80",
+              "surface-container-low": "#f3f4f5",
+              "outline": "#737783",
+              "tertiary-container": "#674600"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; min-height: max(884px, 100dvh); }
+      .font-manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+    <header class="fixed top-0 w-full z-50 transition-colors duration-300" style="background-color: #0D1B2A;">
+        <div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+            <div class="flex items-center gap-4">
+                <span class="text-lg font-black tracking-widest text-white font-manrope uppercase">BUILD UP ACADEMY</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-white font-bold cursor-pointer px-3 py-1 rounded hover:bg-white/10">HE/EN</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24 px-6 max-w-4xl mx-auto">
+        <header class="mb-10 text-right">
+            <h1 class="text-4xl font-extrabold font-headline tracking-tighter text-primary mb-2">חיפוש חכם</h1>
+            <p class="text-secondary font-body max-w-md ml-auto">מצא תשובות טכניות מהירות למונחי בנייה ומפרטים מקצועיים.</p>
+        </header>
+
+        <section class="mb-12">
+            <div class="relative group">
+                <div class="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
+                    <span class="material-symbols-outlined text-primary text-3xl">search</span>
+                </div>
+                <input class="w-full bg-white h-20 pr-16 pl-6 text-xl font-body border-none rounded-xl shadow-sm focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-slate-300" placeholder="הקלד מונח טכני (למשל: Low-E, GFCI)..." type="text">
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div class="md:col-span-8 space-y-6">
+                <div class="bg-white p-8 rounded-xl shadow-sm relative overflow-hidden">
+                    <h2 class="text-lg font-bold font-headline text-primary mb-6">מונחים פופולריים</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="windows.html" class="px-5 py-2.5 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-full text-sm font-semibold">Low-E Glass</a>
+                        <a href="lighting.html" class="px-5 py-2.5 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-full text-sm font-semibold">GFCI Outlet</a>
+                        <a href="countertops.html" class="px-5 py-2.5 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-full text-sm font-semibold">Quartz</a>
+                        <a href="foundation.html" class="px-5 py-2.5 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-full text-sm font-semibold">R-Value</a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                    <h2 class="text-lg font-bold font-headline text-primary mb-6">חיפושים אחרונים</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
+                            <span class="material-symbols-outlined text-slate-400">history</span>
+                            <span class="font-medium text-on-surface">בידוד תרמי תקרות</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-4">
+                <div class="bg-amber-900 text-white p-6 rounded-xl relative overflow-hidden h-full">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="material-symbols-outlined text-amber-400">lightbulb</span>
+                        <span class="font-headline font-bold text-sm tracking-tight uppercase">Academy Tip</span>
+                    </div>
+                    <p class="text-sm font-body leading-relaxed">השתמש בחיפוש לזיהוי מהיר של מונחים בזמן סיור באתר הבנייה.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] border-t border-slate-100 z-50">
+        <a href="index.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">school</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">אקדמיה</span>
+        </a>
+        <a href="search.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">search</span>
+            </div>
+            <span class="text-[10px] font-bold font-label text-[#775a19] tracking-tight">חיפוש</span>
+        </a>
+        <a href="checklist.html" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">fact_check</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">צ'ק-ליסט</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center gap-1 group">
+            <div class="p-1 transition-transform duration-150 active:scale-95 text-slate-400 hover:text-[#775a19]">
+                <span class="material-symbols-outlined text-[28px]">person</span>
+            </div>
+            <span class="text-[10px] font-medium font-label text-slate-500 tracking-tight">פרופיל</span>
+        </a>
+    </nav>
+</body>
+</html>
