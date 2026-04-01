@@ -1,100 +1,80 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="light" lang="he" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Build Up Remodeling Academy - Dashboard</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script id="tailwind-config">
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                "background": "#f8f9fa",
-                "primary": "#000000",
-                "secondary": "#775a19",
-                "primary-container": "#0f1c2c"
-              }
-            }
-          }
-        }
-    </script>
+    <title>Build Up Academy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <style>
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .blueprint-grid {
-            background-image: linear-gradient(to right, rgba(116, 119, 125, 0.05) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(116, 119, 125, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
+        .blueprint-grid { background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px); background-size: 40px 40px; }
     </style>
 </head>
-<body class="bg-background font-body min-h-screen">
-    <header class="fixed top-0 w-full z-50 bg-[#0D1B2A] shadow-lg">
-        <div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
-            <h1 class="text-white font-bold tracking-tighter text-xl">BUILD UP ACADEMY</h1>
-            <div class="flex items-center gap-4">
-                <a href="search.html" class="text-white"><span class="material-symbols-outlined">search</span></a>
-                <span class="text-white text-sm">HE/EN</span>
-            </div>
+<body class="bg-[#f8f9fa] font-sans min-h-screen">
+    <header class="fixed top-0 w-full z-50 bg-[#0D1B2A] h-16 flex items-center justify-between px-6 shadow-lg text-white">
+        <h1 class="font-bold tracking-tighter text-xl">BUILD UP ACADEMY</h1>
+        <div class="flex items-center gap-4">
+            <a href="search.html"><span class="material-symbols-outlined">search</span></a>
+            <button id="lang-toggle" class="text-sm font-bold border border-white/20 px-2 py-1 rounded">HE/EN</button>
         </div>
     </header>
 
     <main class="pt-24 pb-32 px-6 max-w-7xl mx-auto blueprint-grid">
         <div class="mb-12">
-            <h2 class="text-5xl font-headline font-extrabold text-primary mb-4 tracking-tighter">Sales Mastery</h2>
-            <p class="text-xl text-slate-600">Select a category to start training</p>
+            <h2 class="text-5xl font-extrabold text-black mb-2 tracking-tighter">Sales Mastery</h2>
+            <p class="text-xl text-slate-500">Select a category to start training</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="cabinets.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
-                <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1556911220-e150223eaa33?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            <a href="cabinets.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556911220-e150223eaa33?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-end p-6">
                         <h3 class="text-white font-bold text-2xl">Kitchens</h3>
                     </div>
                 </div>
             </a>
 
-            <a href="bathrooms.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
-                <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            <a href="bathrooms.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-end p-6">
                         <h3 class="text-white font-bold text-2xl">Bathrooms</h3>
                     </div>
                 </div>
             </a>
 
-            <a href="flooring.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
-                <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            <a href="flooring.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-end p-6">
                         <h3 class="text-white font-bold text-2xl">Flooring</h3>
                     </div>
                 </div>
             </a>
 
-            <a href="foundation.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
-                <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1590060417926-39a21e10700a?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            <a href="foundation.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-end p-6">
                         <h3 class="text-white font-bold text-2xl">Foundation</h3>
                     </div>
                 </div>
             </a>
 
-            <a href="windows.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
-                <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            <a href="windows.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-end p-6">
                         <h3 class="text-white font-bold text-2xl">Windows</h3>
                     </div>
                 </div>
             </a>
 
-            <a href="checklist.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
-                <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            <a href="checklist.html" class="block group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-end p-6">
                         <h3 class="text-white font-bold text-2xl">Checklist</h3>
                     </div>
@@ -103,10 +83,12 @@
         </div>
     </main>
 
-    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 bg-white shadow-lg border-t border-slate-100 z-50">
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 bg-white shadow-lg border-t z-50">
         <a href="index.html" class="text-[#775a19] flex flex-col items-center"><span class="material-symbols-outlined">school</span><span class="text-[10px] font-bold">אקדמיה</span></a>
         <a href="search.html" class="text-slate-400 flex flex-col items-center"><span class="material-symbols-outlined">search</span><span class="text-[10px]">חיפוש</span></a>
         <a href="checklist.html" class="text-slate-400 flex flex-col items-center"><span class="material-symbols-outlined">fact_check</span><span class="text-[10px]">צ'ק-ליסט</span></a>
     </nav>
+
+    <script src="app.js"></script>
 </body>
 </html>
